@@ -20,5 +20,5 @@ public class Exercise1 {
             System.out.println("BIG");
             return;}
         else{
-            System.out.println("CONGRATS!!! a NORMAL");
+            System.out.println("CONGRATS!!! a == NORMAL");
         }}}
