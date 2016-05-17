@@ -7,7 +7,8 @@ public class Exercise3 {
     public static void main(String [] args) {
 
         int month_days[];
-int i;
+
+        int i;
         month_days = new int[12];
 
         month_days[0] = 31;
@@ -33,13 +34,16 @@ int i;
         month_days[10] = 30;
 
         month_days[11] = 31;
+
+        String [] month_name =  {"январь","февраль","март","апрель","май","июнь","июль","август","сентябрь","октябрь","ноябрь","декабрь"};
+
         Scanner sc = new Scanner(System.in);
         System.out.println("Input month namber");
 
         i = sc.nextInt();
         sc.close();
 
-        System.out.println("this month has  " + month_days[i] + " days.");
+        System.out.println(month_name[i]+"-" + month_days[i] + " days.");
 
         }
 
