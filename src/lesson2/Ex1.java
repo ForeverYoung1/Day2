@@ -1,22 +1,47 @@
 package lesson2;
 
-/**
- * Created by ДОМ on 19.05.2016.
- */
 public class Ex1 {
-    public double fCpu;              //частота процессора
-    public String name;          // название
-    public int mem;              //объём памяти
+    private double fCpu;              //частота процессора
+    private String name;          // название брэнда
+    private int mem;              //объём памяти
 
-    public void infoname(){
-        System.out.println("название компа  " +name);
+    public double getfCpu() {
+        return fCpu;
+    }
+
+    public void setfCpu(double fCpu) {
+        this.fCpu = fCpu;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getMem() {
+        return mem;
+    }
+
+    public void setMem(int mem) {
+        this.mem = mem;
+    }
+
+
+    public void infoname() {
+        System.out.println("название компа  " + getName());
 
     }
-    public void infoCpu(){
-        System.out.println("частота проца "+fCpu+" ГГц");
+
+    public void infoCpu() {
+        System.out.println("частота проца " + getfCpu() + " ГГц");
     }
-    public void infoMem(){
-        System.out.println("объём памяти "+mem+" Гб");
+
+    public void infoMem() {
+        System.out.println("объём памяти " + getMem() + " Гб");
     }
+
 
 }
