@@ -16,7 +16,7 @@ public class Test {
             if (a==0){
                 break;
             }}
-            System.out.println("Введено число из  "+i +"цифр");
+            System.out.println("Введено число из  "+i +" цифр");
 
         }
 
