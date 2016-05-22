@@ -48,4 +48,10 @@ public class Hdd {
     public void infoHddN(){
         System.out.println("Брэнд производителя " +getHddName());
     }
+    public void infoHddS(){
+        System.out.println("Скорость вращения "+getHddSpeed());
+    }
+    public void infoHddV(){
+        System.out.println("Объём памяти "+getHddVolume()+" Мб");
+    }
 }

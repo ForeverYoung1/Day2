@@ -16,34 +16,34 @@ public class Main {
         double hddv;  // объём памяти HDD
         String hddt;  // тип HDD или SSD
         String hddn; // название , брэнд
-        double hdds; // скорость вращения шпинделя.
+        int hdds; // скорость вращения шпинделя.
        Scanner scanner = new Scanner(System.in);
         System.out.println(" Введите последовательно частоту; производительность; множитель");
         cpuf = scanner.nextDouble();
         cpup = scanner.nextDouble();
         cpum = scanner.nextDouble();
-//scanner.close();
 
         cpu.setCpuFrequensy(cpuf);
         cpu.setCpuPerfomance(cpup);
         cpu.setCpuMultiplier(cpum);
 
-
-    Scanner scanner1 = new Scanner(System.in);
-        System.out.println(" Введите тип диска;  введите брэнд производителя");
-        hddt = scanner1.next();
-        hddn = scanner1.next();
-        hddv = scanner1.nextInt();
-        hdds = scanner1.nextInt();
+        System.out.println(" Введите тип диска;  введите брэнд производителя; объём памяти;  скорость вращения шпинделя" );
+        hddt = scanner.next();
+        hddn = scanner.next();
+        hddv = scanner.nextDouble();
+        hdds = scanner.nextInt();
         scanner.close();
-        scanner1.close();
-        cpu.infoCpuF();
+         cpu.infoCpuF();
         cpu.infoCpuP();
         cpu.infoM();
         hdd.setHddTupe(hddt);
         hdd.setHddName(hddn);
+        hdd.setHddVolume(hddv);
+        hdd.setHddSpeed(hdds);
         hdd.infoHddT();
         hdd.infoHddN();
+        hdd.infoHddV();
+        hdd.infoHddS();
 
 
 }}
