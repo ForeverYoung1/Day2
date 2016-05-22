@@ -27,16 +27,19 @@ public class Main {
         cpu.setCpuFrequensy(cpuf);
         cpu.setCpuPerfomance(cpup);
         cpu.setCpuMultiplier(cpum);
-        cpu.infoCpuF();
-        cpu.infoCpuP();
-        cpu.infoM();
+
 
     Scanner scanner1 = new Scanner(System.in);
         System.out.println(" Введите тип диска;  введите брэнд производителя");
         hddt = scanner1.next();
         hddn = scanner1.next();
+        hddv = scanner1.nextInt();
+        hdds = scanner1.nextInt();
         scanner.close();
         scanner1.close();
+        cpu.infoCpuF();
+        cpu.infoCpuP();
+        cpu.infoM();
         hdd.setHddTupe(hddt);
         hdd.setHddName(hddn);
         hdd.infoHddT();
