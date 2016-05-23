@@ -31,17 +31,22 @@ public class Ex1 {
 
 
     public void infoname() {
-        System.out.println("название компа  " + getName());
+        print("название компа  " + getName());
 
     }
 
     public void infoCpu() {
-        System.out.println("частота проца " + getfCpu() + " ГГц");
+        print("частота проца " + getfCpu() + " ГГц");
     }
 
     public void infoMem() {
-        System.out.println("объём памяти " + getMem() + " Гб");
+        print("объём памяти " + getMem() + " Гб");
     }
+
+    private void print(String str) {
+        System.out.println(str);
+    }
+
 
 
 }
