@@ -22,7 +22,8 @@ public class Main {
         int monRx;
         int monRy;
         Scanner scanner = new Scanner(System.in);
-        A.printMain(" Введите последовательно частоту в формате хххе-х(3200е-3 например); производительность  в формате хххе-х(82е-1 например);  множитель");
+        A.printMain(" Введите последовательно частоту в формате хххе-х(3200е-3 например);\n" +
+                " производительность  в формате хххе-х(82е-1 например);\n  множитель");
         cpuf = scanner.nextDouble();
         cpup = scanner.nextDouble();
         cpum = scanner.nextDouble();
@@ -31,16 +32,16 @@ public class Main {
         cpu.setCpuPerfomance(cpup);
         cpu.setCpuMultiplier(cpum);
 
-        A.printMain(" Введите тип диска; скорость вращения шпинделя;  введите брэнд производителя;  объём памяти;  ");
+        A.printMain(" Введите тип диска;\n скорость вращения шпинделя;\n  введите брэнд производителя; \n объём памяти;  ");
         hddt = scanner.next();
         switch (hddt) {
             case "ssd":
             case "SSD":
-                A.printMain("Выбран Тип SSD - введите значение скорости = 0; введите брэнд производителя;  объём памяти;");
+                A.printMain("Выбран Тип SSD - введите значение скорости = 0;\n введите брэнд производителя; \n объём памяти;");
                 break;
             case "hdd":
             case "HDD":
-                A.printMain("Выбран Тип HDD - введите значение скорости ; введите брэнд производителя;  объём памяти;");
+                A.printMain("Выбран Тип HDD - введите значение скорости ;\n введите брэнд производителя;  \n объём памяти;");
                 break;
         }
 
@@ -49,7 +50,7 @@ public class Main {
         hddn = scanner.next();
         hddv = scanner.nextDouble();
 
-        A.printMain("Введите название монитора;  Введите разрешение по горизонтали и по верт ");
+        A.printMain("Введите название монитора;\n  Введите разрешение по горизонтали\n и по верт ");
         monN = scanner.next();
         monRx = scanner.nextInt();
         monRy = scanner.nextInt();
