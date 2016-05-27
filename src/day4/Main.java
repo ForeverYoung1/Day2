@@ -22,7 +22,7 @@ public class Main {
         int monRx;
        int monRy;
        Scanner scanner = new Scanner(System.in);
-        System.out.println(" Введите последовательно частоту; производительность; множитель");
+        A.printMain(" Введите последовательно частоту; производительность; множитель");
         cpuf = scanner.nextDouble();
         cpup = scanner.nextDouble();
         cpum = scanner.nextDouble();
@@ -31,12 +31,16 @@ public class Main {
         cpu.setCpuPerfomance(cpup);
         cpu.setCpuMultiplier(cpum);
 
-        System.out.println(" Введите тип диска;  введите брэнд производителя; объём памяти;  скорость вращения шпинделя" );
+        A.printMain(" Введите тип диска; скорость вращения шпинделя;  введите брэнд производителя;  объём памяти;  " );
         hddt = scanner.next();
+        if (hddt=="ssd")
+      if (hddt=="SSD")return;
+        System.out.println("Выбран тип SSD, введите скорость вращения 0");
+        hdds = scanner.nextInt();
         hddn = scanner.next();
         hddv = scanner.nextDouble();
-        hdds = scanner.nextInt();
-        System.out.println("Введите название монитора;  Введите разрешение по горизонтали и по верт ");
+
+       A.printMain("Введите название монитора;  Введите разрешение по горизонтали и по верт ");
         monN = scanner.next();
         monRx = scanner.nextInt();
         monRy = scanner.nextInt();

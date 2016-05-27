@@ -33,14 +33,16 @@ public class Cpu {
         this.cpuMultiplier = cpuMultiplier;
     }
     public void infoCpuF(){
-        System.out.println("Частота процессора = "+ getCpuFrequensy()+ "ГГц");
+        A.ptintCpu("Частота процессора = "+ getCpuFrequensy()+ "ГГц");
     }
     public void infoCpuP(){
-        System.out.println("производительность процессора= "+getCpuPerfomance());
+        A.ptintCpu("производительность процессора= "+getCpuPerfomance());
     }
     public void infoM(){
-        System.out.println("множитель процессора = " + getCpuMultiplier());
+       A.ptintCpu("множитель процессора = " + getCpuMultiplier());
     }
+
+
 
 
 }

@@ -1,5 +1,7 @@
 package day4;
 
+import static day4.A.printMon;
+
 /**
  * Created by ДОМ on 22.05.2016.
  */
@@ -24,22 +26,29 @@ public class Monitor {
     public void setNameMonitor(String nameMonitor) {
         this.nameMonitor = nameMonitor;
     }
-    public void infoMonN(){
-        System.out.println("Брэнд монитора "+ getNameMonitor());
-    }
-    public void infoMonRx(){
-        System.out.println("Разрешение монитора по Х "+getMonResolutionX());
+
+    public void infoMonN() {
+
+        printMon("Брэнд монитора " + getNameMonitor());
     }
 
-    public int getMonResolutionY() {
+    public void infoMonRx() {
+        printMon("Разрешение монитора по Х " + getMonResolutionX());
+    }
+
+    public int getMonResolutionY()
+    {
         return monResolutionY;
     }
 
     public void setMonResolutionY(int monResolutionY) {
         this.monResolutionY = monResolutionY;
     }
-    public void infoMonRy(){
-        System.out.println("Разрешение монитора по У "+getMonResolutionY());
+
+    public void infoMonRy() {
+        printMon("Разрешение монитора по У " + getMonResolutionY());
+
     }
+
 
 }
