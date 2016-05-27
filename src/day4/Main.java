@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String[] args) {
-      //  Monitor monitor = new Monitor();
+        //  Monitor monitor = new Monitor();
         Cpu cpu = new Cpu(); //инициализация объекта Cpu
         double cpuf; // переменная - частота процессора
         double cpup; //  производительность процессора
@@ -20,9 +20,9 @@ public class Main {
         Monitor monitor = new Monitor();  //инициализация объекта Monitor
         String monN;
         int monRx;
-       int monRy;
-       Scanner scanner = new Scanner(System.in);
-        A.printMain(" Введите последовательно частоту; производительность;  множитель");
+        int monRy;
+        Scanner scanner = new Scanner(System.in);
+        A.printMain(" Введите последовательно частоту в формате хххе-х(3200е-3 например); производительность  в формате хххе-х(82е-1 например);  множитель");
         cpuf = scanner.nextDouble();
         cpup = scanner.nextDouble();
         cpum = scanner.nextDouble();
@@ -31,16 +31,25 @@ public class Main {
         cpu.setCpuPerfomance(cpup);
         cpu.setCpuMultiplier(cpum);
 
-        A.printMain(" Введите тип диска; скорость вращения шпинделя;  введите брэнд производителя;  объём памяти;  " );
+        A.printMain(" Введите тип диска; скорость вращения шпинделя;  введите брэнд производителя;  объём памяти;  ");
         hddt = scanner.next();
-        if (hddt=="ssd")
-      if (hddt=="SSD")return;
-        A.printMain("Выбран тип SSD, введите скорость вращения 0;  введите брэнд производителя;  объём памяти;");
+        switch (hddt) {
+            case "ssd":
+            case "SSD":
+                A.printMain("Выбран Тип SSD - введите значение скорости = 0; введите брэнд производителя;  объём памяти;");
+                break;
+            case "hdd":
+            case "HDD":
+                A.printMain("Выбран Тип HDD - введите значение скорости ; введите брэнд производителя;  объём памяти;");
+                break;
+        }
+
+
         hdds = scanner.nextInt();
         hddn = scanner.next();
         hddv = scanner.nextDouble();
 
-       A.printMain("Введите название монитора;  Введите разрешение по горизонтали и по верт ");
+        A.printMain("Введите название монитора;  Введите разрешение по горизонтали и по верт ");
         monN = scanner.next();
         monRx = scanner.nextInt();
         monRy = scanner.nextInt();
@@ -49,7 +58,7 @@ public class Main {
         monitor.setMonResolutionX(monRx);
         monitor.setMonResolutionY(monRy);
         scanner.close();
-         cpu.infoCpuF();
+        cpu.infoCpuF();
         cpu.infoCpuP();
         cpu.infoM();
         hdd.setHddTupe(hddt);
@@ -65,4 +74,5 @@ public class Main {
         monitor.infoMonRy();
 
 
-}}
+    }
+}
