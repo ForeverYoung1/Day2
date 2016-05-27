@@ -56,7 +56,7 @@ public class Hdd {
         if (getHddSpeed()!=0)
         A.printHdd("Скорость вращения " + getHddSpeed());
         else
-            System.out.println("Параметр скорость вращения не требуется");
+            A.printHdd("Параметр скорость вращения не требуется");
         }
 
 

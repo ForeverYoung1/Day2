@@ -22,7 +22,7 @@ public class Main {
         int monRx;
        int monRy;
        Scanner scanner = new Scanner(System.in);
-        A.printMain(" Введите последовательно частоту; производительность; множитель");
+        A.printMain(" Введите последовательно частоту; производительность;  множитель");
         cpuf = scanner.nextDouble();
         cpup = scanner.nextDouble();
         cpum = scanner.nextDouble();
@@ -35,7 +35,7 @@ public class Main {
         hddt = scanner.next();
         if (hddt=="ssd")
       if (hddt=="SSD")return;
-        System.out.println("Выбран тип SSD, введите скорость вращения 0");
+        A.printMain("Выбран тип SSD, введите скорость вращения 0;  введите брэнд производителя;  объём памяти;");
         hdds = scanner.nextInt();
         hddn = scanner.next();
         hddv = scanner.nextDouble();

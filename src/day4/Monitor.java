@@ -10,7 +10,7 @@ public class Monitor {
     private int monResolutionY; //разрешение монитора по Y
     private String nameMonitor;  //название монитора
 
-    public double getMonResolutionX() {
+    public int getMonResolutionX() {
         return monResolutionX;
     }
 
