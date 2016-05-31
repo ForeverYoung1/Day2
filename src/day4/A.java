@@ -1,13 +1,14 @@
 package day4;
 
 /**
- * Created by ДОМ on 24.05.2016.
+ * Класс для вывода строк
  */
 public class A {
+    //метод выводит всю информацию по объекту Монитор
     static void printMon(String str) {
         System.out.println(str);
     }
-
+//информация по объекту Сpu
     static void ptintCpu(String str) {
         System.out.println(str);
     }
